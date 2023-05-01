@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find Locate Number</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			background-image: url("background.jpg");
+			background-size: cover;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 10px 20px;
+			background-color: #fff;
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 999;
+		}
+		h1 {
+			color: #333;
+			font-size: 36px;
+			margin: 20px 0;
+			text-align: center;
+		}
+		p {
+			color: #666;
+			font-size: 18px;
+			margin: 20px 0;
+			text-align: center;
+		}
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			margin: 120px auto 0;
+			max-width: 960px;
+			padding: 0 20px;
+		}
+		.item {
+			flex-basis: calc(33.33% - 40px);
+			margin: 20px;
+			overflow: hidden;
+			position: relative;
+		}
+		.item img {
+			display: block;
+			width: 100%;
+			height: auto;
+			transition: transform 0.2s ease-in-out;
+		}
+		.item:hover img {
+			transform: scale(1.05);
+		}
+		.item h2 {
+			background-color: #4CAF50;
+			color: #fff;
+			font-size: 24px;
+			font-weight: normal;
+			margin: 0;
+			padding: 20px;
+			position: absolute;
+			bottom: -60px;
+			left: 0;
+			right: 0;
+			text-align: center;
+			transition: transform 0.2s ease-in-out;
+		}
+		.item:hover h2 {
+			transform: translateY(-40px);
+		}
+		.button {
+			background-color: #7JV83;
+			border: none;
+			border-radius: 5px;
+			color: #594;
+			cursor: pointer;
+			display: inline-block;
+			font-size: 16px;
+			font-weight: bold;
+			margin: 20px;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+		}
+		.button:hover {
+			background-color: #3E8E41;
+			transform: scale(1.05);
+		}
+		.button:active {
+			background-color: #4CAF50;
+			transform: scale(0.95);
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Find Locate Number</h1>
+	</header>
+	<div class="container">
+		<div class="item">
+		<img src="1.png" alt="Photo 1">
+		<h2>Reliably</h2>
+	</div>
+	<div class="item">
+		<img src="1-1.png" alt="Photo 2">
+		<h2>Fast</h2>
+	</div>
+	<div class="item">
+		<img src="1-2.png" alt="Photo 3">
+		<h2>Exactly</h2>
+	</div>
+</div>
+<p>Find Locate Number is an Android smartphone application that makes it easy to find the location of phone numbers anywhere in the world.
+
+With this application, you can search for the location of a phone number using a database that contains millions of entries from various sources. You can enter a phone number into the app and get its real-time location.</p>
+<a class="button" href="iv.html">Privacy Policy</a>
+<a class="button" href="jg.html">Terms & Conditions</a>
+<a class="button" href="yv.html">Delete data</a>
+<script>
+	// Анимация кнопок
+	const buttons = document.querySelectorAll(".button");
+	buttons.forEach(button => {
+		button.addEventListener("mouseenter", () => {
+			button.style.transform = "translateY(-5px)";
+		});
+		button.addEventListener("mouseleave", () => {
+			button.style.transform = "translateY(0)";
+		});
+	});
+	// Меняющийся задний фон
+	const backgrounds = ["Artboard 2.png", "Artboard 2.png", "Artboard 2.png"];
+	let index = 0;
+	setInterval(() => {
+		document.body.style.backgroundImage = `url(${backgrounds[index]})`;
+		index = (index + 1) % backgrounds.length;
+	}, 1000);
+</script>
+</body>
+</html>
